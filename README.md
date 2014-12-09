@@ -1,7 +1,5 @@
-DigitRecognition
+Handwritten Digit Recognition using Deep Learning (Convolutional Neural Networks)
 ================
-
-Digit recognition using deep learning (convolutional neural networks)
 
 This Matlab implementation of a 3-layer convolutional network was tested on MNIST public dataset which includes 60,000 training samples and 10,000 testing samples. It achieves > 97% accuracy with 30 training iterations. For a visualization of the network, see: https://github.com/lhoang29/DigitRecognition/blob/master/threelayer.png
 
@@ -20,3 +18,4 @@ How it works:
 Input sample of is a 28 x 28 grayscale image of a digit (0-9) which is size-normalized and centered. Pixel values are normalized to [-1,1] range for better convergence.
 
 All nonlinear functions are defined as standard hyperbolic tangents: f(x)=tanh(x). Initial weight values in each layer are drawn randomly from a Gaussian distribution with mean 0 and standard deviation 0.01. Bias and scaling parameters are all set to 1. Parameter updates are done using stochastic gradient descent. Learning rate is set to η=0.01 was used.
+
