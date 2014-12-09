@@ -3,7 +3,7 @@ DigitRecognition
 
 Digit recognition using deep learning (convolutional neural networks)
 
-This Matlab implementation of a 3-layer convolutional network was tested on MNIST public dataset which includes 60,000 training samples and 10,000 testing samples. It achieves > 97% accuracy with 30 training iterations.
+This Matlab implementation of a 3-layer convolutional network was tested on MNIST public dataset which includes 60,000 training samples and 10,000 testing samples. It achieves > 97% accuracy with 30 training iterations. For a visualization of the network, see: https://github.com/lhoang29/DigitRecognition/blob/master/threelayer.png
 
 How to run:
 
