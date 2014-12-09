@@ -8,14 +8,12 @@ This Matlab implementation of a 3-layer convolutional network was tested on MNIS
 How to run:
 
 1. Download dataset from http://yann.lecun.com/exdb/mnist/
-2. Load data:
-```[trainlabels,trainimages,testlabels,testimages] = cnnload();```
-3. Train & test: 
-```[missimages, misslabels] = cnntrain(trainlabels,trainimages,testlabels,testimages,60000,30,0.01);```
+2. Load data:`[trainlabels,trainimages,testlabels,testimages] = cnnload();`
+3. Train & test:`[missimages, misslabels] = cnntrain(trainlabels,trainimages,testlabels,testimages,60000,30,0.01);`
 The above specifies training on the maximum set of 60k samples with 30 iterations and learning rate η=0.01. For faster training time, use 10k samples with 10 iterations and η=0.01 which should achieve ~95% accuracy.
-4. Show failed predictions:
-```showmiss(missimages,misslabels,testimages,testlabels,25,2);```
-This sets numshow = 25 and numpages = 2 which displays 25 * 2 = 50 first failed predictions. Each page is a separate figure organized as a square of size sqrt(numshow) x sqrt(numshow).
+4. Show failed predictions: `showmiss(missimages,misslabels,testimages,testlabels,25,2);`
+This sets numshow = 25 and numpages = 2 which displays 25 * 2 = 50 first failed predictions.
+Each page is a separate figure organized as a square of size sqrt(numshow) x sqrt(numshow).
 
 How it works:
 
