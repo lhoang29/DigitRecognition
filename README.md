@@ -5,7 +5,7 @@ This Matlab implementation of a 3-layer convolutional network was tested on MNIS
 
 **Network Architecture:**
 
-- Convolutional layer L1 with four feature maps from four 5x5 kernels.
+- Convolutional layer L1 with four feature maps resulting from four 5x5 kernels.
 - Subsampling layer L2 with non-overlapping 2 x 2 windows to compute local average.
 - Fully-connected output layer L3. The true output vector is represented as y ∈ R^10 corresponding to 0-9.
 
